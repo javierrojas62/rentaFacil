@@ -1,0 +1,78 @@
+/* Tema Claro */
+.light-theme {
+  --bg-color: #e0e5ec;
+  --bg-gradient: linear-gradient(135deg, #e0e5ec 0%, #f0f0f0 100%);
+  --text-color: #333333;
+  --text-muted: #666666;
+  --primary-color: #4f46e5;
+  --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow-light: 8px 8px 16px rgba(163, 177, 198, 0.4);
+  --shadow-dark: -8px -8px 16px rgba(255, 255, 255, 0.8);
+  --shadow-light-hover: 12px 12px 20px rgba(163, 177, 198, 0.5);
+  --shadow-dark-hover: -12px -12px 20px rgba(255, 255, 255, 0.9);
+  --shadow-inset-light: 4px 4px 8px rgba(163, 177, 198, 0.4);
+  --shadow-inset-dark: -4px -4px 8px rgba(255, 255, 255, 0.8);
+  --info-bg: rgba(79, 70, 229, 0.1);
+  --info-border: rgba(79, 70, 229, 0.2);
+}
+
+/* Tema Oscuro */
+.dark-theme {
+  --bg-color: #2d3748;
+  --bg-gradient: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  --text-color: #e2e8f0;
+  --text-muted: #a0aec0;
+  --primary-color: #6366f1;
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-light: 8px 8px 16px rgba(16, 20, 30, 0.6);
+  --shadow-dark: -8px -8px 16px rgba(56, 68, 88, 0.4);
+  --shadow-light-hover: 12px 12px 20px rgba(16, 20, 30, 0.7);
+  --shadow-dark-hover: -12px -12px 20px rgba(56, 68, 88, 0.5);
+  --shadow-inset-light: 4px 4px 8px rgba(16, 20, 30, 0.6);
+  --shadow-inset-dark: -4px -4px 8px rgba(56, 68, 88, 0.4);
+  --info-bg: rgba(99, 102, 241, 0.1);
+  --info-border: rgba(99, 102, 241, 0.2);
+}
+
+/* Aplicar colores de tema */
+.light-theme,
+.dark-theme {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.light-theme .navbar-custom,
+.dark-theme .navbar-custom {
+  background: var(--bg-color);
+  border-bottom-color: var(--border-color);
+}
+
+.light-theme .navbar-brand,
+.dark-theme .navbar-brand {
+  color: var(--primary-color);
+}
+
+.light-theme .nav-link.btn,
+.dark-theme .nav-link.btn {
+  color: var(--text-color);
+}
+
+.light-theme .nav-link.btn.active,
+.dark-theme .nav-link.btn.active {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+.light-theme .table-hover tbody tr:hover,
+.dark-theme .table-hover tbody tr:hover {
+  background-color: var(--border-color);
+}
+
+.light-theme .btn-pdf,
+.dark-theme .btn-pdf {
+  background: var(--bg-color);
+  color: var(--primary-color);
+  box-shadow: var(--shadow-light), var(--shadow-dark);
+}
